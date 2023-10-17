@@ -1,0 +1,27 @@
+
+#main-input-container {
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#main-input {
+
+  font-size: 20px;
+  padding: 10px;
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 5px;
+  width: calc(100% - 20px - 2px);
+  margin-top: 30px;
+
+}
+
+#main-input-info {
+
+  font-size: 25px;
+
+}

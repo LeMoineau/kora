@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>kora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/mainInput.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  </head>
+  <body>
+
+    <div id="header">
+      <img src="resources/imgs/back.png" title="Retourner à l'étape précédente" onclick="back()">
+      <img id="closeButton" src="resources/imgs/close.png" title="Fermer" onclick="closed()">
+    </div>
+
+    <div id="topRightText"> </div>
+    <div id="topLeftText"> </div>
+
+    <div id="container">
+      <div id="centerText">
+        Bonjour et bienvenue dans kora !
+      </div>
+      <datalist id="sujets">
+        <option value="Envoyer un mail"></option>
+      </datalist>
+      <div id="main-input-container">
+        <input type="text" list="sujets" value="" id="main-input" onfocus="focusMainInput()" onfocusout="outfocusMainInput()">
+        <div id="main-input-info"> Cliquer ici puis écrivez ce que vous voulez chercher </div>
+      </div>
+      <div id="next-button-container">
+        <div class="next-button" onclick="next()" id="next-button"> Suivant </div>
+        <div class="info-line">
+          Cliquer ici pour continuer
+        </div>
+      </div>
+      <div id="search-button-container">
+        <div class="next-button" onclick="search()" id="search-button"> Chercher </div>
+        <div class="info-line">
+          Après avoir remplit la zone de texte au dessus, cliquez ici pour rechercher
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="javas/java.js"> </script>
+  <script type="text/javascript" src="javas/searchEngine.js"> </script>
+  <script type="text/javascript"> init() </script>
+
+</html>

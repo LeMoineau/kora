@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400&family=Roboto:wght@100&display=swap');
+
+body {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ecf0f1;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', cursive;
+  overflow: hidden;
+
+}
+
+#header {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  width: calc(100% - 40px);
+  padding: 20px;
+  -webkit-app-region: drag;
+
+}
+
+#header img {
+
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+  transition: all 0.2s linear;
+  -webkit-app-region: no-drag; 
+
+}
+
+#header img:hover {
+  opacity: 1;
+}
+
+#container {
+
+  width: auto;
+  height: auto;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+#centerText, #topLeftText, #topRightText {
+
+  transition: all 0.5s linear;
+
+}
+
+#topLeftText, #topRightText {
+
+  position: fixed;
+  font-size: 30px;
+  top: 90px;
+
+}
+
+#topLeftText { left: 40px; }
+#topRightText { right: 40px; }
+
+#next-button-container, #search-button-container {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  width: 30%;
+  left: 35%;
+  font-size: 25px;
+
+}
+
+#search-button-container {
+
+  display: none;
+
+}
+
+.next-button {
+
+  color: white;
+  background-color: #3498db;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  margin: 40px auto 0px auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+}
+
+.next-button:hover {
+
+  background-color: #2980b9;
+
+}
+
+#search-button { background-color: #2ecc71 }
+#search-button:hover { background-color: #27ae60; }
+
+.info-line {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px;
+
+}
